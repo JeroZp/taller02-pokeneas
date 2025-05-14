@@ -5,40 +5,88 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pokeneas de Antioquia</title>
   <link rel="stylesheet" href="/css/styles.css">
+  <style>
+    /* Asegúrate de poner esto en tu styles.css si prefieres */
+    .hero-content {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+    .hero-image img {
+      max-width: 200px;
+      height: auto;
+      border: 4px solid var(--primary-color);
+      border-radius: 8px;
+    }
+  </style>
 </head>
 <body>
+  <!-- Encabezado principal -->
   <header>
-    <h1 class="title">Pokeneas</h1>
-    <p class="subtitle">Criaturas místicas de Antioquia</p>
-  </header>
-
-  <main class="main">
-    <div class="container">
-      <div class="card-container">
-        <div class="card">
-          <div class="card-header">
-            <h2>Bienvenido a PokeneaDex</h2>
-          </div>
-          <img src="https://pokedex-pokeneas.s3.us-east-1.amazonaws.com/images/pokedesimage.jpg" alt="Pokeneas" class="card-img">
-          <div class="card-body">
-            <p class="card-text">Descubre los increíbles Pokeneas de Antioquia, criaturas con la actitud y el sabor paisa.</p>
-            <div id="pokeneas-list"></div>
-          </div>
-          <div class="card-footer">
-            <p>Container ID: <span id="container-id-list">local</span></p>
-          </div>
-        </div>
-      </div>
-
-      <div class="buttons">
-        <a href="/pokenea" class="btn">Ver Pokenea aleatorio</a>
-        <button id="show-list-button" class="btn btn-secondary">Ver lista de Pokeneas</button>
+    <div class="container header-flex">
+      <div class="branding">
+        <h1 class="title">Pokeneas</h1>
+        <p class="subtitle">Criaturas místicas de Antioquia</p>
       </div>
     </div>
+  </header>
+
+  <!-- Carrusel publicitario -->
+  <section class="carousel-container" aria-label="Promoción">
+    <div class="carousel-text" role="marquee">
+      Adquiere tu pokenea&nbsp;&nbsp;&nbsp;
+      Adquiere tu pokenea&nbsp;&nbsp;&nbsp;
+      Adquiere tu pokenea&nbsp;&nbsp;&nbsp;
+      Adquiere tu pokenea&nbsp;&nbsp;&nbsp;
+    </div>
+  </section>
+
+  <!-- Contenido principal -->
+  <main class="main">
+    <!-- Hero section -->
+    <section id="intro" class="hero container">
+      <div class="hero-content">
+        <!-- Texto -->
+        <div class="hero-text">
+          <h2 class="intro-title">Bienvenido a PokeneaDex</h2>
+          <p class="intro-text">
+            Descubre los increíbles Pokeneas de Antioquia, criaturas con la actitud y el sabor paisa.
+          </p>
+          <div class="intro-buttons">
+            <a href="/pokenea" class="btn">Ver Pokenea aleatorio</a>
+            <button id="show-list-button" class="btn btn-secondary">
+              Ver lista de Pokeneas
+            </button>
+            <button id="json" class="btn btn-secondary">
+              JSON 
+            </button>
+          </div>
+        </div>
+        <!-- Imagen de Pikachu -->
+        <div class="hero-image">
+          <img src="/img/Picachu.png" alt="Pikachu" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección de lista de Pokeneas -->
+    <section id="list-section" class="list container" hidden aria-live="polite">
+      <h2>Lista de Pokeneas</h2>
+      <div id="pokeneas-list">
+        <!-- Aquí se inyectarán los ítems desde JavaScript -->
+      </div>
+      <p class="list-footer">
+        Container ID: <span id="container-id-list">local</span>
+      </p>
+    </section>
   </main>
 
+  <!-- Pie de página -->
   <footer class="footer">
-    <p>PokeneaDex &copy; 2025</p>
+    <div class="container">
+      <p>&copy; 2025 PokeneaDex | Diseñado con 🇨🇴 y pasión paisa</p>
+    </div>
   </footer>
 
   <script src="/js/main.js"></script>
