@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pokenea</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <header>
+    <h1 class="title" id="pokenea-nombre">Cargando Pokenea...</h1>
+  </header>
+
+  <main class="main">
+    <div class="container">
+      <div class="card-container">
+        <div class="card">
+          <div class="card-header">
+            <h2>PokeneaDex</h2>
+          </div>
+          <img id="pokenea-imagen" src="" alt="Pokenea" class="card-img">
+          <div class="card-body">
+            <p class="card-text" id="pokenea-frase"></p>
+            <div class="card-stats">
+              <div>
+                <strong>Altura:</strong> <span id="pokenea-altura"></span> cm
+              </div>
+              <div>
+                <strong>Habilidad:</strong> <span id="pokenea-habilidad"></span>
+              </div>
+            </div>
+          </div>
+          <div class="card-footer">
+            <p>Container ID: <span id="container-id">local</span></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="buttons">
+        <a href="/" class="btn">Volver al inicio</a>
+        <button id="refresh-button" class="btn btn-secondary">Ver otro Pokenea</button>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>PokeneaDex &copy; 2025</p>
+  </footer>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>

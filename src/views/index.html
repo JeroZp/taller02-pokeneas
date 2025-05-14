@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pokeneas de Antioquia</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <header>
+    <h1 class="title">Pokeneas</h1>
+    <p class="subtitle">Criaturas místicas de Antioquia</p>
+  </header>
+
+  <main class="main">
+    <div class="container">
+      <div class="card-container">
+        <div class="card">
+          <div class="card-header">
+            <h2>Bienvenido a PokeneaDex</h2>
+          </div>
+          <img src="https://pokedex-pokeneas.s3.us-east-1.amazonaws.com/images/pokedesimage.jpg" alt="Pokeneas" class="card-img">
+          <div class="card-body">
+            <p class="card-text">Descubre los increíbles Pokeneas de Antioquia, criaturas con la actitud y el sabor paisa.</p>
+            <div id="pokeneas-list"></div>
+          </div>
+          <div class="card-footer">
+            <p>Container ID: <span id="container-id-list">local</span></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="buttons">
+        <a href="/pokenea" class="btn">Ver Pokenea aleatorio</a>
+        <button id="show-list-button" class="btn btn-secondary">Ver lista de Pokeneas</button>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>PokeneaDex &copy; 2025</p>
+  </footer>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>
