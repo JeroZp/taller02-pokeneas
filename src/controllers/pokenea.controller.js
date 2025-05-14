@@ -31,7 +31,6 @@ exports.getPokeneaView = (req, res) => {
     });
 };
 
-
 exports.getIndex = (req, res) => {
     res.render('index');
 };

@@ -2,3 +2,4 @@ node_modules
 .github
 docker-compose.yml
 Dockerfile
+src/views
