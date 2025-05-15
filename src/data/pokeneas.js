@@ -1,68 +1,67 @@
 // src/data/pokeneas.js
-
 const pokeneas = [
   {
     id: 1,
-    nombre: "Pikachú de Aranjuez",
+    nombre: "Pikachú de Laureles",
     altura: 40,
-    habilidad: "Rayo de metro",
-    imagen: "https://pokedex-pokeneas.s3.us-east-1.amazonaws.com/images/pikachupaisa2.jpg",
+    habilidad: "Electroparranda",
+    imagen: "/img/Picachu.png",      
     frase: "¡Parce, mis descargas electrizan hasta el chorro del Metro!"
   },
   {
     id: 2,
-    nombre: "Charmander de Guarne",
+    nombre: "Charmander de Guatapé",
     altura: 60,
-    habilidad: "Fuego de fogón",
-    imagen: "https://pokedex-pokeneas.s3.us-east-1.amazonaws.com/images/charmanderpaisa2.jpg",
+    habilidad: "Llama de embalse",
+    imagen: "/img/Charmander.png",
     frase: "¡Mi llama calienta más que el fogón en la guachafita!"
   },
   {
     id: 3,
-    nombre: "Bulbasaur de Jardín",
+    nombre: "Bulbasaur de Envigado",
     altura: 50,
-    habilidad: "Semilla de silleta",
-    imagen: "https://pokedex-pokeneas.s3.us-east-1.amazonaws.com/images/bulbasaurpaisa2.jpg",
+    habilidad: "Raíz silletera",
+    imagen: "/img/Bulbasaur.png",
     frase: "¡Mi semilla florece con más sazón que las silleteras!"
   },
   {
     id: 4,
     nombre: "Squirtle de Robledo",
     altura: 70,
-    habilidad: "Chorro de quebrada",
-    imagen: "https://pokedex-pokeneas.s3.us-east-1.amazonaws.com/images/squirtlepaisa2.jpg",
+    habilidad: "Tormenta de guadua",
+    imagen: "/img/Squirtle.png",
     frase: "¡Mis chorros pausan cualquier calentón en la canchita!"
   },
   {
     id: 5,
     nombre: "Jigglypuff de Castilla",
     altura: 80,
-    habilidad: "Voz de vallenato",
-    imagen: "https://pokedex-pokeneas.s3.us-east-1.amazonaws.com/images/jigglypuffpaisa2.jpg",
+    habilidad: "Balada de la ochenta",
+    imagen: "/img/Jigglypuff.png",
     frase: "¡Con mi vocecito apago hasta el parche más berraco!"
   },
   {
     id: 6,
     nombre: "Meowth de Santo Domingo",
     altura: 90,
-    habilidad: "Garra de arriero",
-    imagen: "https://pokedex-pokeneas.s3.us-east-1.amazonaws.com/images/meowthpaisa2.jpg",
+    habilidad: "Arañazo de calle",
+    imagen: "/img/Meowth.png",
     frase: "¡Mi maullido manda más que el pregón del tranvía!"
   },
   {
     id: 7,
-    nombre: "Snorlax de Laureles",
+    nombre: "Snorlax de Belén",
     altura: 100,
-    habilidad: "Sueño de chicharrón",
-    imagen: "https://pokedex-pokeneas.s3.us-east-1.amazonaws.com/images/snorlaxpaisa2.jpg",
+    habilidad: "Siesta paisa",
+    imagen: "/img/Snorlax.png",
     frase: "¡Mi sueño es más profundo que el chorro de la quebrada!"
   },
   {
     id: 8,
-    nombre: "Psyduck de Belén",
+    nombre: "Psyduck de Medellín",
     altura: 110,
-    habilidad: "Mareo de fonda",
-    imagen: "https://pokedex-pokeneas.s3.us-east-1.amazonaws.com/images/psyduckpaisa2.jpg",
+    habilidad: "Confusión de fonda",
+    imagen: "/img/Psyduck.png",
     frase: "¡Mi mareo pone a rodar la rumba hasta el amanecer!"
   }
 ];

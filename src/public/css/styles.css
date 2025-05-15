@@ -224,9 +224,7 @@ header {
   margin-top: 2rem;
 }
 
-/*=====================================
-  Pie de página (Footer)
-=====================================*/
+
 .footer {
   background-color: var(--primary-color);
   color: var(--secondary-color);
@@ -236,9 +234,57 @@ header {
   margin-top: 2rem;
 }
 
-/*=====================================
-  Responsive
-=====================================*/
+#pokeneas-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+/* Estilo de cada card */
+.pokenea-item {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.pokenea-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Imagen de la card */
+.pokenea-item img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+/* Contenido interno */
+.pokenea-item .pokenea-content {
+  padding: 1rem;
+}
+.pokenea-item .pokenea-content h3 {
+  margin-bottom: 0.5rem;
+  color: var(--primary-color);
+}
+.pokenea-item .pokenea-content p {
+  margin-bottom: 0.25rem;
+  color: var(--dark-color);
+  font-size: 0.9rem;
+}
+
+@media (max-width: 800px) {
+  #pokeneas-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 500px) {
+  #pokeneas-list {
+    grid-template-columns: 1fr;
+  }
+}
 @media (max-width: 500px) {
   .card { width: 90%; }
   .buttons { flex-direction: column; align-items: center; }

@@ -31,7 +31,9 @@ app.get('/api/pokeneas', (req, res) => {
     id: p.id,
     nombre: p.nombre,
     altura: p.altura,
-    habilidad: p.habilidad
+    habilidad: p.habilidad,
+    imagen:   p.imagen,
+    frase:    p.frase
   }));
   
   res.json({

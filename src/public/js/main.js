@@ -17,7 +17,7 @@ async function loadRandomPokenea() {
   }
 }
 
-// Carga todos los Pokeneas 
+// Carga todos los Pokeneas y los muestra como cards de a tres por fila
 async function loadAllPokeneas() {
   try {
     const response = await fetch('/api/pokeneas');
@@ -30,9 +30,12 @@ async function loadAllPokeneas() {
       const item = document.createElement('div');
       item.className = 'pokenea-item';
       item.innerHTML = `
-        <h3>${p.nombre}</h3>
-        <p>Altura: ${p.altura} cm</p>
-        <p>Habilidad: ${p.habilidad}</p>
+        <img src="${p.imagen}" alt="${p.nombre}">
+        <div class="pokenea-content">
+          <h3>${p.nombre}</h3>
+          <p><strong>Altura:</strong> ${p.altura} cm</p>
+          <p><strong>Habilidad:</strong> ${p.habilidad}</p>
+        </div>
       `;
       listEl.appendChild(item);
     });
@@ -62,12 +65,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (showListBtn && listSection) {
       showListBtn.addEventListener('click', () => {
-        listSection.hidden = false;
-        loadAllPokeneas();
+        listSection.hidden = false;   
+        loadAllPokeneas();            
       });
     }
 
-    // Botón para ver el JSON 
+    // Botón para ver el JSON crudo
     const jsonBtn = document.getElementById('json');
     if (jsonBtn) {
       jsonBtn.addEventListener('click', () => {
