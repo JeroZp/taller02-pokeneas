@@ -1,12 +1,14 @@
-# Dockerfile
-FROM node:16-alpine
-
+FROM node:18-alpine
 WORKDIR /app
 
+# Instala deps
 COPY package*.json ./
 RUN npm install --production
 
+# Copia el resto (incluyendo src/, public/, views/)
 COPY . .
 
 EXPOSE 3000
-CMD ["node", "app.js"]
+
+# Arranca tu servidor desde src/app.js
+CMD ["node", "src/app.js"]
