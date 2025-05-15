@@ -1,20 +1,17 @@
-# Usa una imagen oficial de Node
 FROM node:18-alpine
 
-# Directorio de trabajo dentro del contenedor
+# 1) crea el directorio de trabajo
 WORKDIR /app
 
-# Copia los package.json primero (para cachear layer de npm install)
+# 2) copia package.json e instala deps
 COPY package*.json ./
+RUN npm ci --only=production
 
-# Instala dependencias
-RUN npm install --production
+# 3) copia el código fuente completo
+COPY src/ ./src
 
-# Copia el resto de tu código (esto copiará src/app.js -> /app/app.js)
-COPY src/ .
-
-# Expone el puerto que usa tu servidor
+# 4) expone el puerto
 EXPOSE 3000
 
-# Comando por defecto
-CMD ["node", "app.js"]
+# 5) arranca tu app desde src/app.js
+CMD ["node", "src/app.js"]
