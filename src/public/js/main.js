@@ -35,6 +35,7 @@ async function loadAllPokeneas() {
           <h3>${p.nombre}</h3>
           <p><strong>Altura:</strong> ${p.altura} cm</p>
           <p><strong>Habilidad:</strong> ${p.habilidad}</p>
+          <p><strong>Frase:</strong> ${p.frase}</p>
         </div>
       `;
       listEl.appendChild(item);

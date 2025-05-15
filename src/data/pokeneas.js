@@ -5,7 +5,7 @@ const pokeneas = [
     nombre: "Pikachú de Laureles",
     altura: 40,
     habilidad: "Electroparranda",
-    imagen: "/img/Picachu.png",      
+    imagen: "https://pokemonneas.s3.us-east-1.amazonaws.com/Picachu.png",      
     frase: "¡Parce, mis descargas electrizan hasta el chorro del Metro!"
   },
   {
@@ -13,7 +13,7 @@ const pokeneas = [
     nombre: "Charmander de Guatapé",
     altura: 60,
     habilidad: "Llama de embalse",
-    imagen: "/img/Charmander.png",
+    imagen: "https://pokemonneas.s3.us-east-1.amazonaws.com/Charmander.png",
     frase: "¡Mi llama calienta más que el fogón en la guachafita!"
   },
   {
@@ -21,7 +21,7 @@ const pokeneas = [
     nombre: "Bulbasaur de Envigado",
     altura: 50,
     habilidad: "Raíz silletera",
-    imagen: "/img/Bulbasaur.png",
+    imagen: "https://pokemonneas.s3.us-east-1.amazonaws.com/Bulbasaur.png",
     frase: "¡Mi semilla florece con más sazón que las silleteras!"
   },
   {
@@ -29,7 +29,7 @@ const pokeneas = [
     nombre: "Squirtle de Robledo",
     altura: 70,
     habilidad: "Tormenta de guadua",
-    imagen: "/img/Squirtle.png",
+    imagen: "https://pokemonneas.s3.us-east-1.amazonaws.com/Squirtle.png",
     frase: "¡Mis chorros pausan cualquier calentón en la canchita!"
   },
   {
@@ -37,7 +37,7 @@ const pokeneas = [
     nombre: "Jigglypuff de Castilla",
     altura: 80,
     habilidad: "Balada de la ochenta",
-    imagen: "/img/Jigglypuff.png",
+    imagen: "https://pokemonneas.s3.us-east-1.amazonaws.com/Jigglypuff.png",
     frase: "¡Con mi vocecito apago hasta el parche más berraco!"
   },
   {
@@ -45,7 +45,7 @@ const pokeneas = [
     nombre: "Meowth de Santo Domingo",
     altura: 90,
     habilidad: "Arañazo de calle",
-    imagen: "/img/Meowth.png",
+    imagen: "https://pokemonneas.s3.us-east-1.amazonaws.com/Meowth.png",
     frase: "¡Mi maullido manda más que el pregón del tranvía!"
   },
   {
@@ -53,7 +53,7 @@ const pokeneas = [
     nombre: "Snorlax de Belén",
     altura: 100,
     habilidad: "Siesta paisa",
-    imagen: "/img/Snorlax.png",
+    imagen: "https://pokemonneas.s3.us-east-1.amazonaws.com/Snorlax.png",
     frase: "¡Mi sueño es más profundo que el chorro de la quebrada!"
   },
   {
@@ -61,7 +61,7 @@ const pokeneas = [
     nombre: "Psyduck de Medellín",
     altura: 110,
     habilidad: "Confusión de fonda",
-    imagen: "/img/Psyduck.png",
+    imagen: "https://pokemonneas.s3.us-east-1.amazonaws.com/Psyduck.png",
     frase: "¡Mi mareo pone a rodar la rumba hasta el amanecer!"
   }
 ];
